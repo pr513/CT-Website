@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20p0x;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+#about2 a{
+    font :600;
+    color: #ccc;
+    
+}
+
+#about2 p{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: white;
+}
+
+#about {
+    margin: 0%;
+    padding: 0%;
+}
