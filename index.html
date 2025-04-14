@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="pratham.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+
+        .planet {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, #f39c12, #d35400);
+            box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
+            border-radius: 50%;
+            animation: orbit 10s infinite linear;
+        }
+
+        @keyframes orbit {
+            0% { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+            100% { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-top: 20px;
+            animation: float 4s ease-in-out infinite;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .project {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.1) rotate(3deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .glow {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-form input, .contact-form textarea {
+            background: hsla(46, 77%, 71%, 0.753);
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .contact-form button {
+            background: #f39c12;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="planet" style="top: 20%; left: 10%;"></div>
+    <div class="planet" style="top: 60%; left: 80%;"></div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#Certification">Certification</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <img src="prathamesh.png" alt="Profile Picture" class="profile">
+        <h1 class="glow">PRATHAMESH VIRBHADRA NARGIDE</h1>
+        <p>FY Btech student  <br></p>
+    </section>
+    <h2>About Me</h2>
+             <p>I am a good learner who always try to find some thing new in every moment. Apart from this I like to code in PY and C.<br>
+                I had completed my 12<sup>th</sup> from Shri Chaitnya Junior Collage, Pune. Currently I am trying to learn various things <br>
+                related to computer language.
+
+
+
+    <section id="about2" > 
+        <h4>To know more about me<br></h4>      
+             <a href="vantra1.pdf" target="_main" > MY CV DOWNLOAD from here</a>
+    </section>
+    <section id="education">
+        <h3>Education</h><br>
+            10<sup>th</sup> Percentage  =  91.33%
+            <br> 12<sup>th</sup> Percentage  =  73.33%
+            <br> In 1<sup>st</sup> year's 1<sup>st</sup>semester i got = 7.9 sgpa
+    </section>
+    <section id="Certification" >
+        <h3>Certification's</h3>
+          <h4>SQL</h4>
+          <img src="op.jpg" 
+           width="300px">
+          <h4>Cisco essential 1</h4>
+          <img src="py.jpg" 
+          width="300px">
+          <h4>Cisco essential 2</h4>
+          <img src="pq2.jpg" 
+          width="300px">
+
+
+    </section>
+
+    <section id="projects">
+        <h2 class="glow">Projects</h2>
+
+        <div class="project" onclick="openProject('https://example.com/project1')">
+            <h3>Project 1</h3>
+            <img src="proj.jpg"
+            width="300px">
+            <p> The "Parachute Model" Project is of "Applied Mechanics" Course.This Project includes a plastic carry bag, Thread, a small weight which states  the Principle of Gravity. Me and 3 friends were part of the project.  </p>
+
+        </div>
+        
+        <div class="project" onclick="openProject('https://example.com/project2')">
+            <h3>Project 2</h3>
+            <img src="pro. 2.jpg"
+            width="300px">
+            <p>This project was maid by me and my 3 friends who were in the same batch . This project was maid under the subject "ENGINEERING PHYSICS" in this project one of my friend maid a wireless electric transmition device . This project was based on Electricity and wireless electricity transmition .</p>
+        </div>
+
+        <div class="project" onclick="openProject('https://example.com/project3')">
+            <h3>Project 3</h3>
+            <img src="DT .jpg"
+            width="300px">
+            <p> The "Ecosystem" is the name of website which was the project of "DT(Design Thinking)" course.This project was made by 4 group members including me.
+                The website was made to help farmers, by giving information about the crops, reccomending information about crops,fertilizers,etc.
+                The website shows the correct time for planting the crops, spraying of fertilizers and provides the method to generates more yield.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2 class="glow">Contact Me</h2>
+        <div class="contact-form">
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+            <p>Website Visitor's Counter</p>
+            <!-- AtoZSEOTools Counter Code START -->
+            <a href="https://toolsbox.com/website-hit-counter" target="_blank" title="Web Counter">
+                <img src="https://toolsbox.com/website-hit-counter/count/&style=style1&show=p&num=6&uid=oX"  title="Web Counter" alt="AtoZSEOTools Web Counter" />
+                </a>
+                <!-- AtoZSEOTools Counter Code END -->
+    <footer>
+        &copy; 2025 Prathamesh Nargide | All Rights Reserved.
+    </footer>
+</body>
+</html>
